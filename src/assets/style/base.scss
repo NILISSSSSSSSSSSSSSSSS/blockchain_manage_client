@@ -1,0 +1,48 @@
+@import "variable.scss";
+
+// * {
+//   box-sizing: border-box;
+//   outline: none;
+// }
+html,body,ul,li,h1,h2,h3,h4,p,ol,a,img,section,nav,header,footer,input,form,select,span,i,em,b{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+input{
+  outline: none;
+}
+body, html {
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback';
+  color: $color-text;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: $color-text;
+}
+ul {
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+i,b,em{
+  font-style: normal;
+  font-weight: normal;
+}
+// .container-box {
+//   margin-left: auto;
+//   margin-right: auto;
+//   padding-right: $distance-x1;
+//   padding-left: $distance-x1;
+//   max-width: 1200px;
+// }
+// 清除浮动
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
